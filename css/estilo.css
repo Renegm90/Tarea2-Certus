@@ -1,0 +1,84 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+}
+/* Globales */
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para Box Model */
+    scroll-snap-type: y mandatory;
+}
+body {
+    font-size: 16px;
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100% );
+}
+header h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--oscuro);
+    padding: 3rem 0;
+    background-image: url(/img/banner1.webp);
+}
+.container {
+    max-width: 120rem;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container .container-items {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 2rem;    
+    grid-row-gap: 2rem;
+    width: 100%;
+    
+}
+
+.container .container-items .item {
+    border:  solid var(--gris);
+    border-radius: 10px;
+    max-width: 20rem;
+    padding: 1rem;
+    margin: auto;
+    transition: 1s;
+    background-color: var(--grisClaro);
+}
+.container-items .item:hover{
+    box-shadow: 0 0 10px var(--gris);
+    scale: 1.06;
+}
+.container-items .item img {
+    max-width: 100%;
+}
+.container-items .item .titulo-item{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    color: var(--oscuro);
+    text-transform: uppercase;
+    height: 40px;
+}
+.container-items .item .precio {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+.container-items .item .agregar-carrito {
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
