@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Formulario de Login y Registro</title>
+</head>
+<body>
+    <div class="contarair-main">
+        <div class="bienvenida">
+            <div class="bienvenida-child">
+                <h2>Bienvenido</h2>
+                <p>Visita nuestro catálogo iniciando sesión</p>
+            </div>
+        </div>
+        <div class="formulario">
+            <div class="formulario-childs">
+                <h2>Ingrese su cuenta</h2>
+                <form class="form">
+                    <label>
+                        <i class='bx bx-user-circle'></i>
+                        <input type="text" placeholder="Nombre Completo">
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" placeholder="Correo Electrónico">
+                    </label>
+                    <label>
+                        <i class='bx bx-lock' ></i>
+                        <input type="password" placeholder="Contraseña">
+                    </label>
+                    <input type="submit" onclick="validarUsuario()" value="Iniciar Sesión" >
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/codigox1.js"></script>
+</body>
+</html>

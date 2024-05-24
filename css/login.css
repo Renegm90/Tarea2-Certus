@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(/img/imagenfondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contarair-main {
+    max-width: 900px;
+    height: 500px;
+    display: flex;
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    border-radius: 20px;
+    margin: 10px;
+}
+.bienvenida {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-image: url(/img/imagen2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.bienvenida-child {
+    width: 100%;
+    padding: 0 30px;
+}
+.bienvenida-child h2 {
+    font-size: 2.5rem;
+    color:chocolate
+}
+.bienvenida-child p {
+    margin: 15px 0;
+    color:chocolate;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 60%;
+    text-align: center;
+    background-color:rgb(237, 200, 162);
+}
+.formulario-childs {
+    padding: 0 30px;
+}
+.formulario-childs h2 {
+    color: #333;
+}
+.form {
+    margin: 30px 0 0 0;
+    
+}
+
+.form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+}
+.form label input {
+    width: 100%;
+    padding: 10px;
+    background-color:rgb(237, 200, 162);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+}
+.form label i {
+    color: #a7a7a7;
+}
+
+.form input[type="submit"] {
+    background-color: rgb(236, 184, 94);
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+}
+.form input[type="submit"]:hover {
+    background-color: rgb(221, 163, 62);
+}
+
+/* RESPONSIVE FORM */
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    html{
+        font-size: 8px;
+    }
+    .contarair-main{
+        height: auto;
+        flex-direction: column;
+        background-image: url(/img/imagen2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bienvenida {
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        background: none;
+    }
+    .formulario {
+        width: 100%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        background: none;
+    }
+    .formulario-childs h2 {
+        font-size: 17px;
+        color: chocolate;
+    }
+    .form {
+    
+        margin-bottom: 10px;
+    }
+    .form label {
+    
+        background-color:rgb(237, 200, 162);
+    }
+}
